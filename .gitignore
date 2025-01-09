@@ -1,0 +1,49 @@
+# Arquivos e pastas de ambientes virtuais
+venv/
+.env/
+
+database/
+.db
+# Arquivos de configuração e segurança
+*.env
+*.DS_Store
+
+# Arquivos compilados do Python
+*.pyc
+*.pyo
+__pycache__/
+
+# Logs
+*.log
+
+#docs
+*.txt
+
+# Configurações de IDEs
+.vscode/
+.idea/
+
+# Arquivos temporários e de cache
+*.bak
+*.swp
+*.tmp
+
+# Arquivos de bibliotecas instaladas
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+
+# Arquivos gerados pelo pytest e outros testes
+htmlcov/
+.coverage
+.tox/
+.nox/
+.cache/
+*.pytest_cache/
+
+
+# Arquivos de wheel
+*.whl
+
