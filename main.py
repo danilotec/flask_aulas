@@ -4,13 +4,13 @@ import requests
 from bs4 import BeautifulSoup
 from datetime import datetime
 from dotenv import load_dotenv
+import os
 import telebot
 import logging
 
-"""
-integrar com o telegram
-"""
-CHAVE_API = '7481481123:AAEv8n1LhKu2q2P5hbWCw6S4TSB-RGm5W7E'
+load_dotenv()
+
+CHAVE_API = os.getenv('CHAVE_API', '')
 bot =  telebot.TeleBot(CHAVE_API)
 
 hora = datetime.now().strftime("%H:%M")
