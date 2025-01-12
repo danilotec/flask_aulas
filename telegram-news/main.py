@@ -54,7 +54,7 @@ async def texto_diario() -> bool:
     raw_html = response.text
     parsed_html = BeautifulSoup(raw_html, 'html.parser')
 
-    data = parsed_html.select_one('#dailyText')#scalableui
+    data = parsed_html.select_one('#dailyText')
     if data is not None:
         texto_dia = data.get_text()
         with open('texto.txt', 'w+', encoding='utf-8') as arquivo:
